@@ -1,5 +1,5 @@
-//HIDE THE NAV BAR
-//________________________________________________
+//▶▶▶▶▶HIDE THE NAV BAR
+
 const naviToggle = document.getElementById("navigation__toggle");
 // console.log(naviToggle);
 
@@ -12,40 +12,54 @@ naviToggle.addEventListener('change', function () {
    
     // VISIBLE
     if (naviToggle.checked){ 
-    console.log('checked');   
+    // console.log('checked');   
     showNav.classList.remove('hidden');
     }
 
     //INVISIBLE
     else { 
-    console.log('unchecked');  
+    // console.log('unchecked');  
     showNav.classList.add('hidden');
 }})
 
 
 
-//CLOSE THE NAV BAR
-//_____________________________________________
+//▶▶▶▶▶CLOSE THE NAV BAR
+
 const closeNav = document.querySelectorAll('.closeNav');
 
 for (let i= 0; i < closeNav.length; i++)
 closeNav[i].addEventListener('click', function() {
 naviToggle.checked =false;})
 
-// SENT ALERT MESSAGE
+//▶▶▶▶▶ SENT ALERT MESSAGE
 
-// document.getElementById('submit').addEventListener('click', function() {
-//     console.log('Message sent!');
-//     window.alert('Votre message a bien été envoyé!!')
+const submitButton = document.getElementById('submit');
+// //submitButton.addEventListener('click', function(e) {
+
+// const formInputs = document.querySelectorAll('.form__input');
+// for (let i= 0; i < 2; i++){
+//   e.preventDefault();
+//   const input = formInputs[i].value.length;
+ 
+//   if(input >0){
+//        send()
+//   }
+
+// }
+
 // } )
 
-//SCROLL BUTTON
+// function send (){
+  
+// }
+//▶▶▶▶▶SCROLL BUTTON
 
 
-//Get the button:
+//➡Get the button:
 mybutton = document.getElementById("scroll");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//➡ When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
