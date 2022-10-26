@@ -327,6 +327,7 @@ a[data-lightbox]:hover img {
    width: 90vh;
    max-width: 900px;
    margin: 0 auto ;
+   margin-top: 259px;
 }
 
 #lightbox-modal .modal-dialog img {
@@ -378,6 +379,26 @@ a[data-lightbox]:hover img {
    opacity: 0.4;
 }
 
+
+.modal-backdrop {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1040;
+   background-color: #000
+}
+
+.modal-backdrop.fade {
+   filter: alpha(opacity=0);
+   opacity: 0
+}
+
+.modal-backdrop.in {
+   filter: alpha(opacity=50);
+   opacity: .5
+}
 .next-lightbox {
    padding: 6px 8px 1px 13px;
    right: 25px;

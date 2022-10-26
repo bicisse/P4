@@ -35,24 +35,27 @@ naviToggle.checked =false;})
 //▶▶▶▶▶ SENT ALERT MESSAGE
 
 const submitButton = document.getElementById('submit');
-// //submitButton.addEventListener('click', function(e) {
+submitButton.addEventListener('click', function(e) {
 
-// const formInputs = document.querySelectorAll('.form__input');
-// for (let i= 0; i < 2; i++){
-//   e.preventDefault();
-//   const input = formInputs[i].value.length;
- 
-//   if(input >0){
-//        send()
-//   }
-
-// }
-
-// } )
-
-// function send (){
+const formInputs = document.querySelectorAll('.form__input');
+for (let i= 0; i < 2; i++){
+  e.preventDefault();
   
-// }
+  const inputs = formInputs[i];
+  const inputsValue = inputs.value;
+  const inputValueLength = inputsValue.length;
+  if(inputValueLength >2){
+      alert('Votre message a été envoyé avec succès! Merci');
+   
+     
+      break;
+  }
+ ;
+}
+
+} )
+
+
 //▶▶▶▶▶SCROLL BUTTON
 
 
